@@ -16,6 +16,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { LoginComponent } from './login/login.component';
 import { AdminModule } from './admin/admin.module';
 import { PanierModule } from './panier/panier.module';
+import { AddproductComponent } from './addproduct/addproduct.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { PanierModule } from './panier/panier.module';
     ShowProductComponent,
     NavComponent,
     NotfoundComponent,
-    LoginComponent
+    LoginComponent,
+    AddproductComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,

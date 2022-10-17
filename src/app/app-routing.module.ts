@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FormComponent } from './form/form.component';
 import { LoginComponent } from './login/login.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { AddProductComponent } from './produit/add-product/add-product.component';
@@ -13,12 +14,13 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
 
   {path:'addProduct',component:AddProductComponent},
-  
+  {path:'form',component:FormComponent},
   {path:'update',component:UpdateproductComponent},
   {path:'product',component:ShowProductComponent,
 children:[
   {path:'remove/:myid',component:RemoveProductComponent},
   {path:'detail/:id',component:RdetailProductComponent},
+  
 ]
 },
 {path:'admin',loadChildren:()=>import('./admin/admin.module').then((m)=>{m.AdminModule})},
