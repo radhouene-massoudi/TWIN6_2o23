@@ -8,11 +8,12 @@ import { RdetailProductComponent } from './produit/rdetail-product/rdetail-produ
 import { RemoveProductComponent } from './produit/remove-product/remove-product.component';
 import { ShowProductComponent } from './produit/show-product/show-product.component';
 import { UpdateproductComponent } from './produit/updateproduct/updateproduct.component';
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:'login',pathMatch:'full'},
+  {path:'', redirectTo:'reactive',pathMatch:'full'},
   {path:'login',component:LoginComponent},
-
+  {path:'reactive',component:ReactiveformComponent},
   {path:'addProduct',component:AddProductComponent},
   {path:'form',component:FormComponent},
   {path:'update',component:UpdateproductComponent},

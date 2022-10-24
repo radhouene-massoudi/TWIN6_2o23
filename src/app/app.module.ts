@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +18,7 @@ import { AdminModule } from './admin/admin.module';
 import { PanierModule } from './panier/panier.module';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { FormComponent } from './form/form.component';
+import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 
 @NgModule({
   declarations: [
@@ -33,14 +34,16 @@ import { FormComponent } from './form/form.component';
     NotfoundComponent,
     LoginComponent,
     AddproductComponent,
-    FormComponent
+    FormComponent,
+    ReactiveformComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     AdminModule,
-    PanierModule
+    PanierModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
