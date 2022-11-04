@@ -19,7 +19,10 @@ import { PanierModule } from './panier/panier.module';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { FormComponent } from './form/form.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
-
+import { ServiceSSComponent } from './service-ss/service-ss.component';
+import { C2Component } from './c2/c2.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UsersListComponent } from './users-list/users-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +38,10 @@ import { ReactiveformComponent } from './reactiveform/reactiveform.component';
     LoginComponent,
     AddproductComponent,
     FormComponent,
-    ReactiveformComponent
+    ReactiveformComponent,
+    ServiceSSComponent,
+    C2Component,
+    UsersListComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +49,8 @@ import { ReactiveformComponent } from './reactiveform/reactiveform.component';
     FormsModule,
     AdminModule,
     PanierModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

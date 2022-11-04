@@ -11,7 +11,7 @@ import { UpdateproductComponent } from './produit/updateproduct/updateproduct.co
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 
 const routes: Routes = [
-  {path:'', redirectTo:'reactive',pathMatch:'full'},
+  //{path:'', redirectTo:'reactive',pathMatch:'full'},
   {path:'login',component:LoginComponent},
   {path:'reactive',component:ReactiveformComponent},
   {path:'addProduct',component:AddProductComponent},
