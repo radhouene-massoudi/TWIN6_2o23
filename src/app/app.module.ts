@@ -23,6 +23,10 @@ import { ServiceSSComponent } from './service-ss/service-ss.component';
 import { C2Component } from './c2/c2.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UsersListComponent } from './users-list/users-list.component';
+import { FectUserssComponent } from './users/fect-userss/fect-userss.component';
+import { AddUserssComponent } from './users/add-userss/add-userss.component';
+import { UpdateUserComponent } from './users/update-user/update-user.component';
+import { DeleteComponent } from './users/delete/delete.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +45,11 @@ import { UsersListComponent } from './users-list/users-list.component';
     ReactiveformComponent,
     ServiceSSComponent,
     C2Component,
-    UsersListComponent
+    UsersListComponent,
+    FectUserssComponent,
+    AddUserssComponent,
+    UpdateUserComponent,
+    DeleteComponent
   ],
   imports: [
     BrowserModule,

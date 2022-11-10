@@ -1,0 +1,7 @@
+<form #f="ngForm">
+    <label>nom</label>
+    <input type="text" name="name" ngModel >
+    <label>prenom</label >
+    <input type="text" name="surname"  ngModel >
+    <input type="submit" value="save" (click)="addUser(f.value)" >
+</form>

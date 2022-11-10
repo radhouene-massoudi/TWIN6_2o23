@@ -1,0 +1,8 @@
+<p>update-user works!</p>
+<form #f="ngForm">
+    <label>nom</label>
+    <input type="text" name="name"  [(ngModel)]="name">
+    <label>prenom</label >
+    <input type="text" name="surname"    [(ngModel)]="surname">
+    <input type="submit" value="save" (click)="updateUser(f.value)" >
+</form>

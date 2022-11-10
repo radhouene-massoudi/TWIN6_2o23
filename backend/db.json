@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "name": "json-server2",
+      "surname": "typicode2"
+    },
+    {
+      "name": "Rhoda Jimenez",
+      "description": "Consectetur sed in ",
+      "id": 3
+    },
+    {
+      "name": "Reese Bowen",
+      "surname": "Albert",
+      "id": 4
+    },
+    {
+      "name": "Blair Andrews",
+      "surname": "Richard",
+      "id": 5
+    }
+  ]
+}
