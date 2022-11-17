@@ -27,6 +27,12 @@ import { FectUserssComponent } from './users/fect-userss/fect-userss.component';
 import { AddUserssComponent } from './users/add-userss/add-userss.component';
 import { UpdateUserComponent } from './users/update-user/update-user.component';
 import { DeleteComponent } from './users/delete/delete.component';
+import { TvComponent } from './tv/tv.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { ShowoneProductComponent } from './showone-product/showone-product.component';
+import { UpdateProductComponent } from './atelierInput/update-product/update-product.component';
+import { ListComponent } from './atelierInput/list/list.component';
+import { ErrorsComponent } from './atelierInput/errors/errors.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +55,13 @@ import { DeleteComponent } from './users/delete/delete.component';
     FectUserssComponent,
     AddUserssComponent,
     UpdateUserComponent,
-    DeleteComponent
+    DeleteComponent,
+    TvComponent,
+    MobileComponent,
+    ShowoneProductComponent,
+    UpdateProductComponent,
+    ListComponent,
+    ErrorsComponent
   ],
   imports: [
     BrowserModule,

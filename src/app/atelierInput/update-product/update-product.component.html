@@ -1,0 +1,16 @@
+<p>update-product works!</p>
+<form #f="ngForm">
+<label>nom</label>
+<input type="text" name="nom" ngModel [(ngModel)]="prod.nom" required #nom="ngModel">
+<app-errors [err]="nom"></app-errors>
+<label>description</label>
+<input type="text" name="description" ngModel [(ngModel)]="prod.description" minlength="3" required #des="ngModel">
+<app-errors [err]="des"></app-errors>
+<label>price</label>
+<input type="number" name="price" ngModel [(ngModel)]="prod.price" min="3">
+<label>like</label>
+<input type="number" name="like" ngModel [(ngModel)]="prod.like" max="5">
+<label>dislike</label>
+<input type="number" name="dislike" ngModel [(ngModel)]="prod.dislike">
+<input type="submit" value="update product" (click)="updateProduct(f.value)" >
+</form>

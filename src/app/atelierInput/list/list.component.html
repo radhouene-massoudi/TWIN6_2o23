@@ -1,0 +1,15 @@
+<p>list works!</p>
+<div *ngFor="let p of products">
+{{p.id}}
+{{p.nom}}
+{{p.description}}
+{{p.price}}
+{{p.dislike}}
+{{p.like}}
+<input type="submit" value="update" (click)="showUpdateForm(p)">
+
+</div>
+
+<div *ngIf="showUpdate">
+    <app-update-product [prod]="productBinding"></app-update-product>
+    </div>

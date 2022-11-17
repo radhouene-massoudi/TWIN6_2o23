@@ -20,5 +20,22 @@
       "surname": "Richard",
       "id": 5
     }
+  ],
+  "Product": [
+    {
+      "nom": "espritttttttttttttttttt",
+      "description": "descffffffffffff",
+      "price": 400,
+      "like": 0,
+      "dislike": 99,
+      "id": 1
+    },
+    {
+      "nom": "test",
+      "description": "desc",
+      "price": 400,
+      "like": 0,
+      "id": 2
+    }
   ]
 }
