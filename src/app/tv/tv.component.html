@@ -1,3 +1,5 @@
 <p>tv works!</p>
+<div *ngFor="let p of listProdcut ">
 
-    <app-showone-product [product]="listProdcut" ></app-showone-product>
+    <app-showone-product [product]="p" (notif)="afterRcvData($event)" ></app-showone-product>
+</div>

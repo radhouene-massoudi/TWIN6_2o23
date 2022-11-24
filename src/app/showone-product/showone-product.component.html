@@ -1,8 +1,7 @@
 <p>showone-product works!</p>
-<div *ngFor="let p of product">
-{{p.id}}
-{{p.title}}
-</div>
-<div *ngIf="khalil!=''">
-    bonjour
+<div>
+<h1>id</h1>{{product.id}}
+<h1>title</h1>{{product.title}}
+<h1>like</h1>{{product.like}}
+<input type="button" value="like" (click)="sendMsgToParent()" >
 </div>

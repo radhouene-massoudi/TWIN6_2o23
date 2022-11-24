@@ -14,5 +14,10 @@ export class TvComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  afterRcvData(t:any){
+let index=this.listProdcut.indexOf(t);
+if(index!=-1){
+  this.listProdcut[index].like++;
+}
+  }
 }
